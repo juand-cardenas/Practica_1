@@ -13,7 +13,7 @@ int main()
        cout<<"ingrese un numero entero: ";
        cin >>b ;
        if(b<a){cout<<"el numero "<<a<<" es mayor que "<<b<<endl;}
-    if(bba){cout<<"el numero "<<b<<" es mayor que "<<a<<endl;}
+    if(b>a){cout<<"el numero "<<b<<" es mayor que "<<a<<endl;}
        if (a==b){cout<<"el numero de intentos fue de: "<<c;}
    }
     
