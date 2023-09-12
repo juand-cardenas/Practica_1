@@ -1,0 +1,43 @@
+#include <iostream>
+#include <vector>
+using namespace std;
+
+int main()
+{vector<int>palindro ;
+vector<int>numero_2;
+int numero,multi,palin,inver, auxi_1,can_palin,d,a;
+cout<<"ingrese el numero del que quiere obtener el palindromo mas grande: ";
+cin>>numero;
+multi=0;
+can_palin=0;
+while(multi<=999){
+    multi+=1;
+    inver=0;
+    d=0;
+    palin=numero*multi;
+    auxi_1=palin;
+    for(int c=0;c!=-1;c+=1){
+        d=auxi_1%10;
+        inver=inver*10+d;
+        auxi_1=auxi_1/10;
+        if(inver==palin){
+            palindro.push_back(inver);
+            numero_2.push_back(multi);
+            can_palin+=1;
+            c=-2;
+        }
+        if(auxi_1==0 and palin!=inver){
+            
+            c=-2;
+        }
+}
+}
+for(int i=0;i<=can_palin;i+=1){
+    if (palindro[a]<palindro[i]){
+        a=i;
+        i=0;
+    }
+}
+cout<<numero<<"*"<<numero_2[a]<<"="<<palindro[a];
+
+return 0;}
